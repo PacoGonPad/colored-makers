@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    /* se podria utilizar esta manera si el texto formara un boton, caja o baner margin: auto;
+    height: 25px;
+    width: 200px;*/
+    text-align: center;
+}
+/* para que se vea el marker, alto, ancho y un margen auto para centar el contenido*/
+.marker{
+    height: 25px;
+    width: 200px;
+    margin: 10px auto;/* para centrar, se agrega 10 px para la separacion de arriba y abajo*/ 
+}
+
+
+/* se asigna un color de fondo*/
+/* se utiliza la propiedad alinear-gradient, con las valores hexadecimal, hsl y rgb.*/
+.red {
+  background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+  box-shadow: 0px 0px 20px 0 rgba(83, 14, 14, 0.8);
+}
+.cap{
+  width: 60px;
+  height: 25px;
+}
+.cap, .sleeve{
+    display: inline-block;
+}
+.sleeve{
+    width: 110px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    
+    /*esto es redundante
+    border-left-width: 10px;
+    border-left-style: solid;
+    border-left-color: black; */
+    /*para evitarlo solo se utilizar la propiedad border-left y dentro se agrega el ancho el estilo y color.*/
+    border-left: 10px double rgba(0, 0, 0, 0.75);
+    
+}
+/* en el color verde es neceario cambiar el valor de 255 ya que este hace que el color verde sea mas claro, al ponerle el valor 127 se intensifica el color verde más oscuro*/
+.green {
+  background: linear-gradient(#55680D, #71F53E, #116C31);
+  box-shadow: 0 0 20px 0 green;
+}
+.blue {
+  background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+  box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+}
+.container{
+    /*color magenta*/
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+}
